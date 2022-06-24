@@ -197,7 +197,7 @@ app.layout = dbc.Container([
                             'showlegend': True,
                             'xaxis': {'linewidth': 0.1, 'linecolor': '#31333F', 'color': 'white', 'showgrid': False},
                             'yaxis': {'type': 'linear', 'linewidth': 0.1, 'linecolor': '#31333F', 'color': 'white',
-                                      'title': 'klima carbon in treasury'},
+                                      'title': 'Carbon in treasury [t]'},
                             'legend.font.color': 'white',
                             'paper_bgcolor': '#2A2A2A',
                             'plot_bgcolor': '#2A2A2A',
@@ -229,7 +229,7 @@ app.layout = dbc.Container([
                         subgrounds=sg,
                         traces=[
                             Scatter(
-                                name='Klima Market Cap',
+                                name='Klima Market Cap [$]',
                                 x=klima_supply_250d.datetime,
                                 y=klima_supply_250d.marketCap,
                                 stackgroup='one'
@@ -239,7 +239,7 @@ app.layout = dbc.Container([
                             'showlegend': True,
                             'xaxis': {'linewidth': 0.1, 'linecolor': '#31333F', 'color': 'white', 'showgrid': False},
                             'yaxis': {'type': 'linear', 'linewidth': 0.1, 'linecolor': '#31333F', 'color': 'white',
-                                      'title': 'klima Market Cap'},
+                                      'title': 'klima Market Cap [$]'},
                             'legend.font.color': 'white',
                             'paper_bgcolor': '#2A2A2A',
                             'plot_bgcolor': '#2A2A2A',
@@ -310,7 +310,7 @@ app.layout = dbc.Container([
                         subgrounds=sg,
                         traces=[
                             Scatter(
-                                name='Klima Market Cap',
+                                name='Backing per carbon custodied [$/t]',
                                 x = carbon_custodied_250d.datetime,
                                 y= carbon_custodied_250d.backing,
                                 stackgroup='one'
@@ -320,7 +320,7 @@ app.layout = dbc.Container([
                             'showlegend': True,
                             'xaxis': {'linewidth': 0.1, 'linecolor': '#31333F', 'color': 'white', 'showgrid': False},
                             'yaxis': {'type': 'linear', 'linewidth': 0.1, 'linecolor': '#31333F', 'color': 'white',
-                                      'title': 'klima Market Cap'},
+                                      'title': 'Backing per carbon custodied [$/t]'},
                             'legend.font.color': 'white',
                             'paper_bgcolor': '#2A2A2A',
                             'plot_bgcolor': '#2A2A2A',
